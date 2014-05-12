@@ -1,4 +1,5 @@
 Howto::Application.routes.draw do
+  devise_for :users
   resources :videos
 
   root "page#index"
