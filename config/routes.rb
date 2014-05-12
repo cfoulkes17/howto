@@ -1,4 +1,6 @@
 Howto::Application.routes.draw do
+  resources :videos
+
   root "page#index"
 
   get "/about" => "page#about"
