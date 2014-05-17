@@ -1,4 +1,5 @@
 Howto::Application.routes.draw do
+  get "page/information"
   devise_for :users
   resources :videos
 

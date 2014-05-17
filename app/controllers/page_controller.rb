@@ -1,7 +1,4 @@
 class PageController < ApplicationController
-  def index
-  end
-
-  def about
+  def information
   end
 end
