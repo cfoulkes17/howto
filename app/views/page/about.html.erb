@@ -1,3 +1,15 @@
+<% if !user_signed_in? %>
+
+<div class="jumbotron">
+  <h1>Digital Innovation App</h1>
+    <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-success btn-lg" %>
+    <%= link_to "Sign In", new_user_session_path, class: "btn btn-success btn-lg" %>
+  </p>
+</div>
+
+<% end %>
+
+
 <H1> Video Listings.</H1>
 <ul class="media-list">
   <li class="media">
