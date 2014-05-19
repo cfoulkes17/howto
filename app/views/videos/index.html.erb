@@ -26,34 +26,49 @@
 
 <%= link_to 'Upload', new_video_path %>
 
-<table class="table table-striped table-hover ">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Video Title</th>
-      <th>Length</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-   
-    <tr class="danger">
-      <td>1</td>
-      <td>How To...</td>
-      <td>1:00</td>
-      <td>Creighton Foulkes</td>
-    </tr>
-    <tr class="warning">
-      <td>2</td>
-      <td>How To...</td>
-      <td>:55</td>
-      <td>Creighton Foulkes</td>
-    </tr>
-    <tr class="active">
-      <td>3</td>
-      <td>How To...</td>
-      <td>1:00</td>
-      <td>Creighton Foulkes</td>
-    </tr>
-  </tbody>
-</table> 
+<div id="cols">
+    <div class="col_large">
+        <section class="block">
+            <h2 class="featured_list_header">The Basics of This App</h2>
+            <ul id="basics" class="featured_list">
+                <li class="upload">
+                    <h3 class="blue">Upload <span>your videos</span></h3>
+                    <p>This App makes it easy to <a href="/videos">upload the videos</a> you take. We adore many different kinds of file formats and give you great tools so you can make sure your videos look amazing. We even support <a href="#">HD</a>!</p>
+                </li>
+                <li class="share">
+                    <h3 class="green">Share <span>with the family, friends &amp; the world</span></h3>
+                    <p>With the click of a button, you can share a video (or several videos) with anyone you want. </p>
+                </li>
+                <li class="connect">
+                    <h3 class="brown">Connect <span>with other people</span></h3>
+                    <p>This App is a respectful community of people who create How To videos. You can make connections with people by following them, which means you subscribe to their videos, receive updates about them, and have the ability to send them messages.</p>
+                </li>
+                <li class="explore">
+                    <h3 class="orange">Explore <span>This App</span></h3>
+                    <p>There are lots of ways to discover amazing videos on This App. Find what interests you, join communities around videos in <a href="/#">Groups</a>, and browse thousands of <a href="/#">Channels</a> organized by rating.</p>
+                </li>
+                
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="col_small">
+                <div class="block">
+    <ul id="house_badges" class="fading_revolver">
+        <li>
+           
+        
+        <li>
+            <a href="#" target="_blank">
+                <img src="http://cdn.teachhub.com/sites/default/files/styles/large/public/Twitter%20image.png">
+            </a>
+        </li>
+        <li>
+            <a href="/settings/apps" target="_blank">
+                <img src="http://f.vimeocdn.com/images_v6/ads/house_ads/badge_facebook.png" alt="Share Instantly to Facebook">
+            </a>
+        </li>
+    </ul>
+</div>
+

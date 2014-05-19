@@ -1,5 +1,4 @@
 
-
 <% if user_signed_in? %>
 <p>Welcome back</p><p><%= current_user.email %></p>
 <% end %>
@@ -9,3 +8,30 @@
   <p>Don't Have an Account? Sign Up or Sign In.</p>
   <p><a class="btn btn-success btn-lg" role="button" href="/users/sign_in">Sign In</a></p> <p><a class="btn btn-success btn-lg" role="button" href="/users/sign_up">Sign Up</a></p>
 </div>
+
+<section id="features" class="en">
+    <div class="width_wrap">
+        <div class="feature_top">
+            <h1 class="en">What can you do here?</h1>
+            <span class="character crane_red"></span>
+
+            <ul class="grid clearfix">
+                <li class="first">
+                    <a href="/videos">
+                        <img src="https://f.vimeocdn.com/images_v6/ins_home_feature_upload.jpg" alt="Upload and store your videos">
+                        <h2>Upload and store your videos</h2>
+                        <p>This app is perfect for learning and discovering the fundamentals of learning new skills in under 1:00.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://f.vimeocdn.com/images_v6/ins_home_feature_share.png" alt="Share exactly how you want">
+                        <h2>Video Ratings</h2>
+                        <p>A rating system will allow users to rate each video so that when you search for new videos the highest rated will appear first.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://f.vimeocdn.com/images_v6/ins_home_feature_watch.jpg" alt="Watch in amazement">
+                        <h2>Watch in amazement</h2>
+                        <p>Discover extraordinary videos from the world’s leading creators &mdash; and videos made by your friends.</p>
