@@ -31,22 +31,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Videos</a>
+      <a class="navbar-brand" href="/">Videos</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">1 Minute How To Videos</a></li>
-        <li><a href="/information">Information</a></li>
+        <li class="active"><a href="/about">1 Minute How To Videos</a></li>
+        <li><a href="/about">Watch</a></li>
         <li class="dropdown">
-          <a href="/information" class="dropdown-toggle" data-toggle="dropdown">Watch <b class="caret"></b></a>
+          <a href="/information" class="dropdown-toggle" data-toggle="dropdown">Information <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/about">How To</a></li>
-            <li><a href="/about">Highest Rated</a></li>
-            <li><a href="/about">Recommended</a></li>
+            <li><a href="/videos">Upload</a></li>
             <li class="divider"></li>
-            <li><a href="/about">Most Viewed</a></li>
+            <li><a href="/information">More Info</a></li>
             <li class="divider"></li>
             <li><a href="/about">Recently Watched</a></li>
           </ul>
@@ -58,19 +56,9 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">Videos</a></li> 
-      <li><a href="/videos">Upload</a></li>
+   <ul class="nav navbar-nav navbar-right"> 
       <% if user_signed_in? %>
         <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
       <% else %>
@@ -78,8 +66,16 @@
         <li><%= link_to "Sign In", new_user_session_path %></li>
       <% end %> 
     </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+
+  
+
 
 <div class="container">
    <% flash.each do |name, msg| %>

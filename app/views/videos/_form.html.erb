@@ -1,12 +1,12 @@
-<%= form_for(@videos, html: { class: "form-horizontal"} ) do |f| %>
-  <% if @videos.errors.any? %>
+<%= form_for(@video, html: { class: "form-horizontal"} ) do |f| %>
+  <% if @video.errors.any? %>
     <div class="alert alert-danger alert-dismissable">
       <button class="close" aria-hidden="true" data-dismiss="alert" type="button">&times;</button>
 
-      <h4><%= pluralize(@videos.errors.count, "error") %> prohibited this video from being saved:</h4>
+      <h4><%= pluralize(@video.errors.count, "error") %> prohibited this video from being saved:</h4>
 
       <ul>
-      <% @videos.errors.full_messages.each do |msg| %>
+      <% @video.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
